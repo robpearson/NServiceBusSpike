@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<productState xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.2.0.0" Id="a576b88c-cac1-410d-aa03-fd9cdfb13d73" xmlns="http://schemas.microsoft.com/visualstudio/patterning/runtime/productstate">
+  <products>
+    <product Id="bd650e87-fdb6-4cf4-8eb8-e252cd1ee0a0" definitionId="2c52bbfe-442d-4f40-8f6f-7df75dd99cac" definitionName="Application" instanceName="RobPearson.NServiceBusSpike" extensionId="23795EC3-3DEA-4F04-9044-4056CF91A2ED" extensionName="ServiceMatrix" author="Particular Software" version="2.2.2">
+      <properties>
+        <property Id="cb94b202-9485-43c4-a04e-dc0cef802dd4" definitionId="fad5bb76-e58a-4d6f-a4dd-4d460d1d56e5" definitionName="ForwardReceivedMessagesTo" rawValue="audit" />
+        <property Id="dc62194c-2b35-430c-b45e-9f08bb43025f" definitionId="2d4e9c90-92f5-4b3b-a413-49796b498035" definitionName="ErrorQueue" rawValue="error" />
+        <property Id="440c89d9-164b-42f3-baf8-b8995fc27b26" definitionId="8823a0ac-36e9-47a6-9007-705cd12080a8" definitionName="NServiceBusVersion" rawValue="4.3.0" />
+        <property Id="ead3344a-94f0-43b7-9913-3fec5f3dd6b7" definitionId="0580d214-a417-4747-b859-2ad7596b5092" definitionName="ExtensionPath" rawValue="C:\USERS\ROB PEARSON\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\12.0\EXTENSIONS\RR202EIS.QTP\" />
+        <property Id="6590bba8-6415-4b0d-8782-a3c4b0966ff0" definitionId="d8ea971b-49de-4972-8560-f404017d8b83" definitionName="Transport" rawValue="Msmq" />
+        <property Id="9bb45d25-6662-4a6a-850d-b1e43fb4e767" definitionId="854c4ee6-e91f-4e5a-b3b1-a305eee860cb" definitionName="TransportConnectionString" />
+        <property Id="e6dba083-996e-4048-8a2d-2551e0da29f9" definitionId="744106ae-5a52-49c2-973c-2f592e18f74c" definitionName="CompanyLogo" />
+        <property Id="90f1d3dc-435d-42cc-a101-193a6c91f481" definitionId="a8525853-f598-4912-91b7-22f6f70aad2f" definitionName="Title" rawValue="RobPearson.NServiceBusSpike" />
+        <property Id="9de9dcef-1dd9-4059-9676-95f5b1ae4683" definitionId="7096419d-5f7a-4901-9ec5-c4b5de4ff570" definitionName="ToolkitVersion" rawValue="2.2.2" />
+        <property Id="f50b71d8-9683-4711-a220-563f3155cb32" definitionId="44ae36f7-a899-4e23-8611-f08ce41c85ff" definitionName="ProjectNameInternalMessages" rawValue="Internal" />
+        <property Id="a89898f4-93a9-413f-aaa1-0c4547e34df2" definitionId="0f48a4d8-72c6-46c0-9d02-0fec854ec573" definitionName="ProjectNameContracts" rawValue="Contracts" />
+        <property Id="30c93c70-52b8-4baa-ae55-deb433fd966f" definitionId="6f1b4d42-33f8-41b0-a013-57013927d546" definitionName="ProjectNameCode" rawValue="Code" />
+        <property Id="bd700cb6-a105-46b6-8b61-fb03793a1b18" definitionId="a5c36b54-f61a-425e-8e40-d49b951eec4c" definitionName="LicensedVersion" rawValue="False" />
+        <property Id="3d28ae6a-4663-4ab2-ab19-0d0a61b150cc" definitionId="f754071a-321c-40dd-a177-0e1ef12143bb" definitionName="ServiceControlEndpointPluginVersion" rawValue="0.8.0-Unstable0210" />
+        <property Id="7aae418a-6984-4e2c-817d-db89bcbf8140" definitionId="b943e76d-90d1-45d2-b98b-bf2986088bff" definitionName="ServiceControlInstanceURI" rawValue="http://localhost:33333/api" />
+        <property Id="f34f665c-f8f3-4c35-9203-36909fe6dc20" definitionId="1ed83bc3-ef51-4efc-b8d1-128afc800298" definitionName="LaunchServiceInsightOnDebug" rawValue="True" />
+        <property Id="b670d6e2-0dbc-42b4-a93e-8c6ef9ece082" definitionId="ede73009-77d7-438f-8a53-cad296db531f" definitionName="TargetNsbVersion" rawValue="NSB 5.0" />
+        <property Id="e40bc8b3-96bb-44f1-ae06-d3f631003959" definitionId="58f462bd-3e26-41e2-81be-43969034fd41" definitionName="TargetFrameworkVersion" rawValue="4.5" />
+      </properties>
+      <references>
+        <reference Id="da6d76aa-6b04-452e-b764-6b0740960547" value="ServiceMatrix Guidance" kind="NuPattern.Runtime.References.GuidanceReference" />
+      </references>
+      <views>
+        <view Id="74374a41-701e-45d5-8013-73ed3b6b31d9" definitionId="6bc9143a-3e32-4dee-b950-2aa11e4c5f5d" definitionName="Design">
+          <elements>
+            <collection Id="7fba2e9d-309a-440e-85e8-bc219ada4299" definitionId="25802dff-4552-4b8a-9fec-4943a9f20c26" definitionName="Services" instanceName="Services" />
+            <collection Id="25557da9-7128-4ecb-bf0e-36fe638381f3" definitionId="ad8ac730-01f5-47d8-bd53-5a1bc52ccb3b" definitionName="Endpoints" instanceName="Endpoints" />
+            <collection Id="83b08456-62a5-43e0-9c41-6c690d929969" definitionId="f847dee0-d0b7-4270-932f-8b18ceb74f21" definitionName="Infrastructure" instanceName="Infrastructure" />
+            <collection Id="1278711c-eccf-41ed-afdc-5701ab2f1536" definitionId="2f26d53d-1e7f-41ef-860b-f8c03f01624a" definitionName="DummyCollection" instanceName="Dummy Collection" />
+            <element Id="dea34cec-6269-4c78-97af-9d5d55285915" definitionId="f08604f7-cbcd-4f58-bd9b-ca1b64f72f5d" definitionName="ContractsProject" instanceName="RobPearson.NServiceBusSpike.Contracts">
+              <references>
+                <reference Id="39a79736-0c53-49c5-bbe0-09dd8b667e0e" value="solution://e9176e17-bd4a-4a99-9aa1-1b3c91377949/" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;RobPearson.NServiceBusSpike.Contracts&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
+                <reference Id="0bda3466-f717-417d-8fd0-bcafbe9c6e2f" value="solution://e9176e17-bd4a-4a99-9aa1-1b3c91377949/" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;RobPearson.NServiceBusSpike.Contracts&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
+              </references>
+            </element>
+            <element Id="01447885-a3ba-4cfa-a11a-d9e2c23d0999" definitionId="640eb378-e12e-4b7d-8362-f384c114dd76" definitionName="InternalMessagesProject" instanceName="RobPearson.NServiceBusSpike.Internal">
+              <references>
+                <reference Id="7072fcd4-a1b8-40ca-95f5-aa9b80cc2646" value="solution://e0587ed8-2dcf-4fd1-a5c1-04a0f8e039ac/" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;RobPearson.NServiceBusSpike.Internal&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
+                <reference Id="6bd506b3-55c5-47b4-8713-4d31c8227b39" value="solution://e0587ed8-2dcf-4fd1-a5c1-04a0f8e039ac/" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;RobPearson.NServiceBusSpike.Internal&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
+              </references>
+            </element>
+          </elements>
+        </view>
+      </views>
+    </product>
+  </products>
+</productState>
