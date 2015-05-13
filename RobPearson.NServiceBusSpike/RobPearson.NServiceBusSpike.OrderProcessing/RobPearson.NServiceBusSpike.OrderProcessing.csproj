@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD052DDC-51D2-4FB6-92A0-450588BC60D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RobPearson.NServiceBusSpike.OrderProcessing</RootNamespace>
+    <AssemblyName>RobPearson.NServiceBusSpike.OrderProcessing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\packages\NServiceBus.5.2.0\lib\net45\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Host">
+      <HintPath>..\packages\NServiceBus.Host.6.0.0\lib\net45\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.RavenDB">
+      <HintPath>..\packages\NServiceBus.RavenDB.3.0.0\lib\net45\NServiceBus.RavenDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\packages\RavenDB.Client.3.0.3660\lib\net45\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB.Client.3.0.3660\lib\net45\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.CustomChecks">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.CustomChecks.1.0.0\lib\net45\ServiceControl.Plugin.Nsb5.CustomChecks.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.DebugSession">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.DebugSession.1.0.0\lib\net45\ServiceControl.Plugin.Nsb5.DebugSession.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.Heartbeat">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.Heartbeat.1.1.0\lib\net45\ServiceControl.Plugin.Nsb5.Heartbeat.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceControl.Plugin.Nsb5.SagaAudit">
+      <HintPath>..\packages\ServiceControl.Plugin.Nsb5.SagaAudit.1.0.0\lib\net45\ServiceControl.Plugin.Nsb5.SagaAudit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EndpointConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <ItemGuid>c3aaa426-83f2-4efc-b08d-e6d4445a3680</ItemGuid>
+    </Compile>
+    <Compile Include="EndpointConfig.generated.cs">
+      <DependentUpon>EndpointConfig.cs</DependentUpon>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <ItemGuid>e389f0f0-6cbb-412c-b437-7a106e46b271</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\MessageConventions.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <ItemGuid>183f47cb-73ab-4752-8d69-85fe4fa2c101</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\Sales\SubmitOrderHandler.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fbd3082ab-1e68-4ed3-8144-8c3096e29406</SourceModelReference>
+      <ItemGuid>acf2dddf-d65c-4001-9d04-da395bbaefe9</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <ItemGuid>c34e2a3c-fe2d-4da4-a164-6d2c12075c88</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\INServiceBusComponent.cs">
+      <ItemGuid>094ed768-0f25-401e-9d67-edccc42511ef</ItemGuid>
+    </Compile>
+    <Compile Include="Sales\SubmitOrderHandler.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fbd3082ab-1e68-4ed3-8144-8c3096e29406</SourceModelReference>
+      <ItemGuid>6cf83737-ca9c-4236-8d57-8293a7462493</ItemGuid>
+    </Compile>
+    <Compile Include="TransportConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <ItemGuid>4f4dedd3-9818-4150-b8dc-c9d561ab33c1</ItemGuid>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <ItemGuid>73095dee-3c4d-4ac6-8a0e-0d1a06d10c61</ItemGuid>
+    </None>
+    <Content Include="Infrastructure\Logging.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>af540bd9-28a5-431e-b27e-c6f4609e3cb1</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\MasterNodeConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>adf05aea-d488-4f95-9e13-9017f741ada7</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>aa0b40d2-9fff-439e-a03a-c565b6d3c98d</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>cdd1fa83-e46e-444d-8fc6-5675e27d4492</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>d0367439-140a-4cd3-8336-c11ed5f5cf1d</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConnectionString.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>7d4ecf9f-5a43-4da4-9913-1bf47e154e1a</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\SecondLevelRetriesConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>999dea88-8fc0-4ba8-9de1-0dba516a47ca</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\AuditConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/RobPearson.NServiceBusSpike/Element/C:\Dev\MaplePixel\NServiceBusSpike\RobPearson.NServiceBusSpike\RobPearson.NServiceBusSpike.slnbldr%252fdaeb8818-e9e8-4e83-b59c-9e43aed880ea</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>952bcb7c-e3da-4108-b4ee-d6474912afa2</ItemGuid>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobPearson.NServiceBusSpike.Internal\RobPearson.NServiceBusSpike.Internal.csproj">
+      <Project>{E0587ED8-2DCF-4FD1-A5C1-04A0F8E039AC}</Project>
+      <Name>RobPearson.NServiceBusSpike.Internal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

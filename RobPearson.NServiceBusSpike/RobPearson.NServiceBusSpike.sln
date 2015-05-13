@@ -14,6 +14,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobPearson.NServiceBusSpike
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobPearson.NServiceBusSpike.Internal", "RobPearson.NServiceBusSpike.Internal\RobPearson.NServiceBusSpike.Internal.csproj", "{E0587ED8-2DCF-4FD1-A5C1-04A0F8E039AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobPearson.NServiceBusSpike.ECommerce", "RobPearson.NServiceBusSpike.ECommerce\RobPearson.NServiceBusSpike.ECommerce.csproj", "{3262EC09-4FE0-415E-A294-ED69D5222849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobPearson.NServiceBusSpike.OrderProcessing", "RobPearson.NServiceBusSpike.OrderProcessing\RobPearson.NServiceBusSpike.OrderProcessing.csproj", "{BD052DDC-51D2-4FB6-92A0-450588BC60D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{904E0430-83FE-4BFB-A8A5-2E08D70BE6C4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +39,14 @@ Global
 		{E0587ED8-2DCF-4FD1-A5C1-04A0F8E039AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0587ED8-2DCF-4FD1-A5C1-04A0F8E039AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0587ED8-2DCF-4FD1-A5C1-04A0F8E039AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3262EC09-4FE0-415E-A294-ED69D5222849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3262EC09-4FE0-415E-A294-ED69D5222849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3262EC09-4FE0-415E-A294-ED69D5222849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3262EC09-4FE0-415E-A294-ED69D5222849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD052DDC-51D2-4FB6-92A0-450588BC60D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD052DDC-51D2-4FB6-92A0-450588BC60D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD052DDC-51D2-4FB6-92A0-450588BC60D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD052DDC-51D2-4FB6-92A0-450588BC60D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
